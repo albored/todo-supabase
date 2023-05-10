@@ -16,7 +16,7 @@ function Login() {
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-[25rem] py-9 rounded border border-solid border-grey-300 grid place-items-center">
-        <div className="form-control w-full max-w-xs">
+        <div className="w-full max-w-xs form-control">
           <label className="label" htmlFor="email">
             <span className="label-text">Email</span>
           </label>
@@ -25,12 +25,12 @@ function Login() {
             id="email"
             type="email"
             placeholder="Write you email..."
-            className="input input-bordered w-full max-w-xs"
+            className="w-full max-w-xs input input-bordered"
             required
           />
         </div>
 
-        <div className="form-control w-full max-w-xs">
+        <div className="w-full max-w-xs form-control">
           <label className="label" htmlFor="password">
             <span className="label-text">Password</span>
           </label>
@@ -41,20 +41,15 @@ function Login() {
             id="password"
             type="password"
             placeholder="Write you email..."
-            className="input input-bordered w-full max-w-xs"
+            className="w-full max-w-xs input input-bordered"
             required
           />
         </div>
 
-        <button type="submit" className="btn btn-success w-full max-w-xs mt-5">
+        <button type="submit" className="w-full max-w-xs mt-5 btn btn-success">
           Login
         </button>
       </form>
-
-      <div className="absolute bottom-[200px]">
-        <p>email: ae791a5b49@fireboxmail.lol</p>
-        <p>password: albored777</p>
-      </div>
     </div>
   );
 }
